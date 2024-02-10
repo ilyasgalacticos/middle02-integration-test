@@ -16,9 +16,9 @@ public class CarService {
     private final CarRepository carRepository;
 
     public Car createCar(Car car){
-        car = carRepository.save(car);
-        log.info("Created car {}", car);
-        return car;
+        Car newCar = carRepository.save(car);
+        log.info("Created car {}", newCar);
+        return newCar;
     }
 
     public List<Car> getAllCars(){

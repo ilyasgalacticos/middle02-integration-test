@@ -1,15 +1,15 @@
 package kz.bitlab.testcontainer.middle02testcontainer.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Entity
 @Table(name = "t_car")
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Car {
 
     @Id
